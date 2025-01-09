@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Dessert - Tempting Treacle Tart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const highContrast = localStorage.getItem('highContrast') === 'true';
+            const largeText = localStorage.getItem('largeText') === 'true';
+
+            if (highContrast) {
+                document.body.classList.add('high-contrast');
+            }
+
+            if (largeText) {
+                document.body.classList.add('large-text');
+            }
+        });
+    </script>
+</head>
+<body class="recipe3">
+    <div id="voice-nav-message" style="display: none; position: absolute; top: 10px; right: 10px; background-color: #ff6f61; color: white; padding: 5px; border-radius: 5px;">
+        Voice Navigation Enabled
+    </div>
+    <header>
+        <h1>The Art of Dessert - Tempting Treacle Tart</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe1.html">Pillowy Profiteroles</a></li>
+                <li><a href="recipe2.html">Elegant Eclairs</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <section class="recipe-header">
+            <div class="recipe-description">
+                <h2>Recipe Information</h2>
+                <br>
+                <p>Treacle tarts are a classic British dessert featuring a buttery shortcrust pastry filled with a sweet, gooey mixture of treacle (or golden syrup), fresh breadcrumbs, and a hint of lemon zest. The tart is typically baked until the filling is set, resulting in a delightful contrast between the crisp pastry and the soft, sweet filling. Treacle tarts are famously known as Harry Potter's favorite dessert, making them a beloved treat among fans of the series.</p>
+            </div>
+            <img src="images/tart7.jpg" alt="An image of a treacle tart topped with cream" class="recipe-image">
+        </section>
+        <section>
+            <h2>Recipe Information</h2>
+            <p><strong>Prep Time:</strong> 30 minutes</p>
+            <p><strong>Cook Time:</strong> 1 hour and 5 minutes</p>
+            <p><strong>Serves:</strong> 10 people</p>
+            <p><strong>Dietary Information:</strong> Contains gluten, dairy, and eggs. Nut free. Suitable for vegetarians.</p>
+        </section>
+
+        <section>
+            <h2> Ingredients</h2>
+            <h3>For the Pastry</h3>
+            <ul>
+                <li>
+                    250g plain flour
+                    <span class="tooltip">All-purpose flour can be used as an alternative.</span>
+                </li>
+                <li>
+                    1/2 tsp fine salt
+                    <span class="tooltip">Can be omitted if not preferred.</span>
+                </li>
+                <li>
+                    140g unsalted butter, cubed
+                    <span class="tooltip">Margarine can be used as a substitute.</span>
+                </li>
+                <li>
+                    3 tbsp icing sugar
+                    <span class="tooltip">Granulated sugar can be used as an alternative.</span>
+                </li>
+                <li>
+                    2 medium egg yolks
+                    <span class="tooltip">Flaxseed meal mixed with water can be used as an egg substitute.</span>
+                </li>
+                <li>
+                    2-3 tbsp cold water
+                    <span class="tooltip">Use as needed to bring the dough together.</span>
+                </li>
+            </ul>
+            <h3>For the Filling</h3>
+            <ul>
+                <li>
+                    400g golden syrup
+                    <span class="tooltip">Light corn syrup can be used as an alternative.</span>
+                </li>
+                <li>
+                    1 ball stem ginger, finely chopped
+                    <span class="tooltip">Fresh ginger can be used as a substitute.</span>
+                </li>
+                <li>
+                    1 lemon, zested
+                    <span class="tooltip">Lemon juice can be used for flavor.</span>
+                </li>
+                <li>
+                    2 medium eggs, lightly beaten
+                    <span class="tooltip">Flaxseed meal mixed with water can be used as an egg substitute.</span>
+                </li>
+                <li>
+                    100g fine fresh white breadcrumbs
+                    <span class="tooltip">Can use crushed digestive biscuits as an alternative.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="instructions-card">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Sieve the flour and salt into a large bowl. Add the butter and rub together with your fingers to a fine breadcrumb-like texture.</li>
+                <li>Stir through the icing sugar, then quickly add the egg yolks and 2 tbsp water, mixing swiftly with a cutlery knife to combine. Form into a ball (add another tbsp water if you need to), wrap and chill for 30 mins.</li>
+                <li>Roll out to the thickness of a pound coin, and line a 22cm fluted tart tin with the pastry, leaving an overhang. Return to the fridge for 30 mins.</li>
+                <li>Heat the oven to 200C/180C fan/gas 6. Put a baking sheet into the oven to heat up. Line the pastry case with baking parchment and baking beans, then put in the oven on the baking sheet, and bake for 15 mins.</li>
+                <li>Remove the parchment and bake for a further 10 mins or until the pastry is golden brown. Leave the pastry to cool before trimming off the overhanging edges with a small serrated knife.</li>
+                <li>Lower the oven temperature to 160C/140C fan/gas 4. Combine the golden syrup, ginger, ginger syrup, lemon, eggs, and breadcrumbs in a bowl, briefly whisking everything together until combined.</li>
+                <li>Carefully pour the filling into the pastry case and put in the lower part of the oven to bake for 35-40 mins or until the filling is just set.</li>
+                <li>Remove from the oven and leave to cool down for 20 mins before serving with ice cream or thick clotted cream.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Featured Community Creations</h2>
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="images/tart2.jpg" alt="Treacle Tart Image 1">
+                </div>
+                <div class="mySlides">
+                    <img src="images/tart3.jpg" alt="Treacle Tart Image 2">
+                </div>
+                <div class="mySlides">
+                    <img src="images/tart4.jpg" alt="Treacle Tart Image 3">
+                </div>
+                <div class="mySlides">
+                    <img src="images/tart5.jpg" alt="Treacle Tart Image 4">
+                </div>
+                <div class="mySlides">
+                    <img src="images/tart6.jpg" alt="Treacle Tart Image 5">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Enjoy!</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p style="font-family: 'Dancing Script', cursive;">&copy; 2024 The Art of Dessert. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex - 1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Dessert - Accessibility</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const highContrast = localStorage.getItem('highContrast') === 'true';
+            const largeText = localStorage.getItem('largeText') === 'true';
+
+            if (highContrast) {
+                document.body.classList.add('high-contrast');
+            }
+
+            if (largeText) {
+                document.body.classList.add('large-text');
+            }
+        });
+    </script>
+</head>
+<body class="accessibility">
+    <div id="voice-nav-message" style="display: none; position: absolute; top: 10px; right: 10px; background-color: #ff6f61; color: white; padding: 5px; border-radius: 5px;">
+        Voice Navigation Enabled
+    </div>
+
+    <header>
+        <h1>The Art of Dessert - Accessibility</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe1.html">Pillowy Profiteroles</a></li>
+                <li><a href="recipe2.html">Elegant Eclairs</a></li>
+                <li><a href="recipe3.html">Tempting Treacle Tart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <section>
+            <h2>Our Commitment to Accessibility</h2>
+            <p>At The Art of Dessert, we strive to make our website accessible to everyone. We are committed to ensuring that our content is usable by people of all abilities and disabilities.</p>
+        </section>
+
+        <section>
+            <h2>Accessibility Options</h2>
+            <label for="voice-toggle">
+                <input type="checkbox" id="voice-toggle" aria-label="Enable Voice Navigation" aria-describedby="voice-description">
+                Enable Voice Navigation
+            </label>
+            <span id="voice-description">(Activates voice navigation to assist users in navigating the website.)</span>
+            <br>
+            <label for="high-contrast-toggle">
+                <input type="checkbox" id="high-contrast-toggle" aria-label="Enable High Contrast Mode" aria-describedby="high-contrast-description">
+                Enable High Contrast Mode
+            </label>
+            <span id="high-contrast-description">(Switches to a high contrast color scheme for better visibility.)</span>
+            <br>
+            <label for="large-text-toggle">
+                <input type="checkbox" id="large-text-toggle" aria-label="Enable Large Text Mode" aria-describedby="large-text-description">
+                Enable Large Text Mode
+            </label>
+            <span id="large-text-description">(Increases the text size and changes font for improved readability.)</span>
+        </section>
+
+        <section>
+            <h2>Feedback</h2>
+            <p>If you encounter any accessibility barriers while using our website, please contact us by filling out this form. We welcome your feedback and are committed to improving our accessibility.</p>
+            <form action="mailto:info@theartofdessert.com" method="post" enctype="text/plain">
+                <label for="feedback">Your Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Share your thoughts..."></textarea><br>
+                <input type="submit" value="Send Feedback">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p style="font-family: 'Dancing Script', cursive;">&copy; 2024 The Art of Dessert. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const voiceToggle = document.getElementById('voice-toggle');
+        const highContrastToggle = document.getElementById('high-contrast-toggle');
+        const largeTextToggle = document.getElementById('large-text-toggle');
+        const voiceNavMessage = document.getElementById('voice-nav-message');
+
+        voiceToggle.checked = localStorage.getItem('voiceNavEnabled') === 'true';
+        highContrastToggle.checked = localStorage.getItem('highContrast') === 'true';
+        largeTextToggle.checked = localStorage.getItem('largeText') === 'true';
+
+        if (voiceToggle.checked) {
+            voiceNavMessage.style.display = 'block';
+        }
+        if (highContrastToggle.checked) {
+            document.body.classList.add('high-contrast');
+        }
+        if (largeTextToggle.checked) {
+            document.body.classList.add('large-text');
+        }
+
+        voiceToggle.addEventListener('change', function() {
+            if (voiceToggle.checked) {
+                voiceNavMessage.style.display = 'block';
+                localStorage.setItem('voiceNavEnabled', 'true');
+            } else {
+                voiceNavMessage.style.display = 'none';
+                localStorage.setItem('voiceNavEnabled', 'false');
+            }
+        });
+
+        highContrastToggle.addEventListener('change', function() {
+            if (highContrastToggle.checked) {
+                document.body.classList.add('high-contrast');
+                localStorage.setItem('highContrast', 'true');
+            } else {
+                document.body.classList.remove('high-contrast');
+                localStorage.setItem('highContrast', 'false');
+            }
+        });
+
+        largeTextToggle.addEventListener('change', function() {
+            if (largeTextToggle.checked) {
+                document.body.classList.add('large-text');
+                localStorage.setItem('largeText', 'true');
+            } else {
+                document.body.classList.remove('large-text');
+                localStorage.setItem('largeText', 'false');
+            }
+        });
+    </script>
+</body>
+</html>

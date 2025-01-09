@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Dessert</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Explore delicious dessert recipes including Profiteroles, Chocolate Eclairs, and Treacle Tart. Join us on a sweet journey!">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const highContrast = localStorage.getItem('highContrast') === 'true';
+            const largeText = localStorage.getItem('largeText') === 'true';
+
+            if (highContrast) {
+                document.body.classList.add('high-contrast');
+            }
+
+            if (largeText) {
+                document.body.classList.add('large-text');
+            }
+        });
+    </script>
+</head>
+<body class="index">
+    <div id="voice-nav-message" style="display: none; position: absolute; top: 10px; right: 10px; background-color: #ff6f61; color: white; padding: 5px; border-radius: 5px;">
+        Voice Navigation Enabled
+    </div>
+    <header>
+        <h1>Welcome to The Art of Dessert</h1>
+        <nav>
+            <ul>
+                <li><a href="recipe1.html">Pillowy Profiteroles</a></li>
+                <li><a href="recipe2.html">Elegant Eclairs</a></li>
+                <li><a href="recipe3.html">Tempting Treacle Tart</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At The Art of Dessert, we are passionate about creating delicious, unique, and beautiful desserts. Our mission is to inspire bakers of all levels with easy-to-follow recipes.</p>
+            <p>Scroll down to begin your dessert journey and discover the joy of baking!</p>
+        </section>
+
+        <section id="recipes">
+            <h2>Featured Dessert Recipes</h2>
+            <div class="recipe-container">
+                <div class="recipe-card recipe1">
+                    <img src="images/profiteroles1.jpg" alt="An image of profiteroles">
+                    <h3><a href="recipe1.html">Pillowy Profiteroles</a></h3>
+                    <p>Delightful French pastry filled with cream and topped with chocolate.</p>
+                </div>
+                <div class="recipe-card recipe2">
+                    <img src="images/eclairs1.jpg" alt="An image of a stack of chocolate eclairs">
+                    <h3><a href="recipe2.html">Elegant Eclairs</a></h3>
+                    <p>Deliciously crisp and puffy, filled with chocolate or vanilla pastry cream.</p>
+                </div>
+                <div class="recipe-card recipe3">
+                    <img src="images/tart1.jpg" alt="A image of a plated treacle tart">
+                    <h3><a href="recipe3.html">Tempting Treacle Tart</a></h3>
+                    <p>A comforting classic British dessert with crumbly pastry and rich treacle filling.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="baking-tips">
+            <h2>Baking Tips</h2>
+            <ul>
+                <li><strong>Measure ingredients accurately:</strong> Use a kitchen scale for precise measurements, especially for baking.</li>
+                <li><strong>Room temperature ingredients:</strong> Ensure butter, eggs, and dairy are at room temperature for better mixing.</li>
+                <li><strong>Preheat your oven:</strong> Always preheat your oven to the correct temperature before baking to ensure even cooking.</li>
+                <li><strong>Use quality ingredients:</strong> High-quality ingredients can make a significant difference in flavor and texture.</li>
+                <li><strong>Don’t overmix:</strong> When mixing batter, stop as soon as the ingredients are combined to avoid tough baked goods.</li>
+            </ul>
+        </section>
+
+        <section id="testimonials">
+            <h2>What Our Bakers Say</h2>
+            <blockquote>
+                <p>"The recipes are easy to follow and always turn out delicious! I love baking from this site!"</p>
+                <footer>- Mary N.</footer>
+            </blockquote>
+            <blockquote>
+                <p>"Every dessert I've made has been a hit with my family. Thank you for the wonderful recipes!"</p>
+                <footer>- Alfred O.</footer>
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <p style="font-family: 'Dancing Script', cursive;">&copy; 2024 The Art of Dessert. All rights reserved.</p>
+    </footer>
+</body>
+</html>

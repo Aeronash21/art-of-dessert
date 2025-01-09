@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Dessert - Pillowy Profiteroles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const highContrast = localStorage.getItem('highContrast') === 'true';
+            const largeText = localStorage.getItem('largeText') === 'true';
+
+            if (highContrast) {
+                document.body.classList.add('high-contrast');
+            }
+
+
+            if (largeText) {
+                document.body.classList.add('large-text');
+            }
+        });
+    </script>
+</head>
+<body class="recipe1">
+    <div id="voice-nav-message" style="display: none; position: absolute; top: 10px; right: 10px; background-color: #ff6f61; color: white; padding: 5px; border-radius: 5px;">
+        Voice Navigation Enabled
+    </div>
+    <header>
+        <h1>The Art of Dessert - Pillowy Profiteroles</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe2.html">Elegant Eclairs</a></li>
+                <li><a href="recipe3.html">Tempting Treacle Tart</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <section class="recipe-header">
+            <div class="recipe-description">
+                <h2>Recipe Information</h2>
+                <br>
+                <p>Profiteroles are exquisite French pastries made from choux pastry, which is a light and airy dough created from butter, water, flour, and eggs. These delightful treats are typically filled with rich custard or whipped cream and are often topped with a luscious chocolate glaze. The contrast between the crispy exterior and the creamy filling makes profiteroles a favorite dessert for many.</p>
+            </div>
+            <img src="images/profiteroles7.jpg" alt="An image of profiteroles drizzled with chocolate sauce." class="recipe-image">
+        </section>
+
+        <section>
+            <h2>Recipe Information</h2>
+            <p><strong>Prep Time:</strong> 20 minutes</p>
+            <p><strong>Cook Time:</strong> 30 minutes</p>
+            <p><strong>Serves:</strong> 6 people</p>
+            <p><strong>Dietary Information:</strong> Contains gluten, dairy, and eggs. Nut free. Suitable for vegetarians.</p>
+        </section>
+
+        <section>
+            <h2>Ingredients</h2>
+            <h3>For the Profiteroles</h3>
+            <ul>
+                <li>
+                    50g unsalted butter, cubed
+                    <span class="tooltip">Can substitute with margarine for dairy-free.</span>
+                </li>
+                <li>
+                    2 tsp caster sugar
+                    <span class="tooltip">Granulated sugar can be used as an alternative.</span>
+                </li>
+                <li>
+                    75g strong white flour, sifted
+                    <span class="tooltip">All-purpose flour can be used as a substitute.</span>
+                </li>
+                <li>
+                    2 eggs, lightly beaten
+                    <span class="tooltip">Flaxseed meal mixed with water can be used as an egg substitute.</span>
+                </li>
+                <li>
+                    300ml double cream
+                    <span class="tooltip">Coconut cream can be used for a dairy-free option.</span>
+                </li>
+                <li>
+                    few drops vanilla extract
+                    <span class="tooltip">Vanilla essence can be used as an alternative.</span>
+                </li>
+            </ul>
+            <h3>For the sauce</h3>
+            <ul>
+                <li>
+                    50g cocoa powder
+                    <span class="tooltip">Carob powder can be used as a caffeine-free alternative.</span>
+                </li>
+                <li>
+                    175g caster sugar
+                    <span class="tooltip">Granulated sugar can be used as an alternative.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="instructions-card">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Preheat the oven to 220C/200C fan/gas 7.</li>
+                <li>Put the butter and 2 tsp of the caster sugar in a saucepan with 150ml water. Place the pan over a low heat until the butter and sugar have melted, then bring to the boil.</li>
+                <li>Take off the heat, add the flour all at once and beat energetically with a wooden spoon until the dough comes away from the sides of the pan.</li>
+                <li>Leave to cool for 5 mins, then beat in the eggs bit by bit until you have a stiff, glossy mixture.</li>
+                <li>Rinse two baking trays with cold water, shaking off any excess so they are slightly damp (this helps the pastry to rise).</li>
+                <li>Using 2 teaspoons, spoon blobs of the mixture onto the baking trays, then place in the oven and cook for about 18-20 mins until well risen and brown.</li>
+                <li>Remove the profiteroles from the oven and cut a small slit in the base of each one so they don’t collapse. Cool on a wire rack.</li>
+                <li>When they’re cold, whip the cream lightly until just holding its shape. Sweeten to taste with remaining sugar and a few drops of vanilla extract.</li>
+                <li>To make the sauce, sift the cocoa powder into a bowl. Put the sugar in a pan with 100ml water and warm over a low heat until dissolved. Bring to the boil, cook for 1 min, then pour over the cocoa powder and stir well until smooth.</li>
+                <li>Return the sauce to the pan, cook for 1 min then set aside for 15 mins before drizzling over the profiteroles.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Featured Community Creations</h2>
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="images/profiteroles2.jpg" alt="Profiteroles Image 1">
+                </div>
+                <div class="mySlides">
+                    <img src="images/profiteroles3.jpg" alt="Profiteroles Image 2">
+                </div>
+                <div class="mySlides">
+                    <img src="images/profiteroles4.jpg" alt="Profiteroles Image 3">
+                </div>
+                <div class="mySlides">
+                    <img src="images/profiteroles5.jpg" alt="Profiteroles Image 4">
+                </div>
+                <div class="mySlides">
+                    <img src="images/profiteroles6.jpg" alt="Profiteroles Image 5">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Enjoy!</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p style="font-family: 'Dancing Script', cursive;">&copy; 2024 The Art of Dessert. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex - 1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>

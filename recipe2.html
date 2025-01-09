@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Dessert - Elegant Eclairs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const highContrast = localStorage.getItem('highContrast') === 'true';
+            const largeText = localStorage.getItem('largeText') === 'true';
+
+            if (highContrast) {
+                document.body.classList.add('high-contrast');
+            }
+
+            if (largeText) {
+                document.body.classList.add('large-text');
+            }
+        });
+    </script>
+</head>
+<body class="recipe2">
+    <div id="voice-nav-message" style="display: none; position: absolute; top: 10px; right: 10px; background-color: #ff6f61; color: white; padding: 5px; border-radius: 5px;">
+        Voice Navigation Enabled
+    </div>
+    <header>
+        <h1>The Art of Dessert - Elegant Eclairs</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe1.html">Pillowy Profiteroles</a></li>
+                <li><a href="recipe3.html">Tempting Treacle Tart</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <section class="recipe-header">
+            <div class="recipe-description">
+                <h2>Recipe Information</h2>
+                <br>
+                <p>Chocolate éclairs are a classic French pastry made from choux pastry, characterized by their elongated shape and filled with rich pastry cream. The exterior is crisp and golden, while the interior is light and airy, providing a delightful contrast to the smooth, decadent chocolate glaze that tops them. Filled with a luscious chocolate pastry cream, these treats are a favorite among chocolate lovers and are often enjoyed as a dessert or a sweet snack.</p>
+            </div>
+            <img src="images/eclairs7.jpeg" alt="An image of chocolate eclairs" class="recipe-image">
+        </section>
+        <section>
+            <h2>Recipe Information</h2>
+            <p><strong>Prep Time:</strong> 1 hour</p>
+            <p><strong>Cook Time:</strong> 45 minutes</p>
+            <p><strong>Makes:</strong> 24 eclairs</p>
+            <p><strong>Dietary Information:</strong> Contains gluten, dairy, and eggs. Nut free. Suitable for vegetarians.</p>
+        </section>
+        <section>
+            <h2>Ingredients</h2>
+            <h3>For the Choux Buns</h3>
+            <ul>
+                <li>
+                    140g plain flour
+                    <span class="tooltip">All-purpose flour can be used as an alternative.</span>
+                </li>
+                <li>
+                    pinch of sugar
+                    <span class="tooltip">Can use any granulated sugar.</span>
+                </li>
+                <li>
+                    125ml milk
+                    <span class="tooltip">Almond milk can be used for a dairy-free option.</span>
+                </li>
+                <li>
+                    100g butter
+                    <span class="tooltip">Margarine can be used as a substitute.</span>
+                </li>
+                <li>
+                    4 eggs
+                    <span class="tooltip">Flaxseed meal mixed with water can be used as an egg substitute.</span>
+                </li>
+            </ul>
+            <h3>For the Custard Filling</h3>
+            <ul>
+                <li>
+                    300ml milk
+                    <span class="tooltip">Almond milk can be used for a dairy-free option.</span>
+                </li>
+                <li>
+                    50g caster sugar
+                    <span class="tooltip">Granulated sugar can be used as an alternative.</span>
+                </li>
+                <li>
+                    2 egg yolks
+                    <span class="tooltip">Flaxseed meal mixed with water can be used as an egg substitute.</span>
+                </li>
+                <li>
+                    1 tsp vanilla extract
+                    <span class="tooltip">Vanilla essence can be used as an alternative.</span>
+                </li>
+                <li>
+                    4 tsp plain flour
+                    <span class="tooltip">All-purpose flour can be used as a substitute.</span>
+                </li>
+                <li>
+                    4 tsp cornflour
+                    <span class="tooltip">Can be omitted if not available.</span>
+                </li>
+                <li>
+                    375ml double cream
+                    <span class="tooltip">Coconut cream can be used for a dairy-free option.</span>
+                </li>
+            </ul>
+            <h3>For the Icing</h3>
+            <ul>
+                <li>
+                    100g plain chocolate
+                    <span class="tooltip">Dark chocolate can be used as an alternative.</span>
+                </li>
+                <li>
+                    25g plain butter
+                    <span class="tooltip">Margarine can be used as a substitute.</span>
+                </li>
+                <li>
+                    1 tbsp icing sugar
+                    <span class="tooltip">Granulated sugar can be used as an alternative.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="instructions-card">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Start by making the custard filling. Heat the milk until almost boiling in a saucepan. Meanwhile, mix together the sugar, egg yolks, and vanilla in a bowl, then stir in the flours, a couple of tsp at a time, to a smooth paste.</li>
+                <li>Gradually whisk in the hot milk, pour everything back into the saucepan and cook over a high heat, stirring constantly, for about 5 mins until thick.</li>
+                <li>Lay a sheet of cling film directly on the custard surface, then cool and chill until you’re ready to fill the buns.</li>
+                <li>To make the choux buns, heat the oven to 220C/200C fan/gas 7. Sift the flour with the sugar and a pinch of salt into a small bowl. Put the milk and butter into a medium saucepan with 125ml water and gently heat so the butter melts but the liquid doesn’t bubble.</li>
+                <li>Once the butter has completely melted, increase the heat until the liquid comes to a fast rolling boil. Immediately turn off the heat, tip in the sifted flour and beat vigorously with a wooden spoon until you have a smooth dough that comes away from the sides of the pan. Spread over a large dinner plate to cool to hand temperature.</li>
+                <li>Allow to cool for a few minutes, then gradually add the eggs, mixing well between each addition until the mixture reluctantly drops off the spoon. Don’t add all the egg unless you need to.</li>
+                <li>Cut two large sheets of baking parchment. On each one draw two sets of ‘track’ lines with a 10cm gap – these will be your guidelines so your eclairs will all be roughly the same size. Use the paper to line two large baking sheets – penside down.</li>
+                <li>Spoon your choux mixture into a piping bag with a 1cm star or round wide nozzle, or into a disposable piping bag with a similar-size hole snipped off for piping. Pipe two rows of well-spaced, squashed ‘S’ shapes on each sheet between the guidelines. Bake, one tray at a time, on a high-ish shelf for 25 mins, reducing temperature to 200C/180C fan/gas 6 as soon as they go in the oven.</li>
+                <li>After 25 mins, poke a hole in the end of each bun, or using a small serrated knife, split down the middle and return to the oven, upside-down, to dry out for 5 mins until crisp and golden. Set aside to cool.</li>
+                <li>While the buns are cooling, finish your filling. Whisk the cream until thick, then use your electric whisk to beat the cooled, set custard until just smooth again. Fold in the cream. Spoon your filling into a piping bag – use a small nozzle if you’re filling the buns through the holes you've pierced, or a large nozzle if you’ve split the buns in half. Carefully pipe the custard into each cooled bun – they should feel heavy once full.</li>
+                <li>To make the icing, melt 100g plain chocolate and 25g butter together in a heatproof bowl over a pan of barely simmering water. Once melted, remove from the heat and stir in 75ml double cream and 1 tbsp sifted icing sugar. Once cooled a little, spread over the tops of the buns and leave to cool.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Featured Community Creations</h2>
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="images/eclairs2.jpeg" alt="Chocolate Eclairs Image 1">
+                </div>
+                <div class="mySlides">
+                    <img src="images/eclairs3.jpg" alt="Chocolate Eclairs Image 2">
+                </div>
+                <div class="mySlides">
+                    <img src="images/eclairs4.jpg" alt="Chocolate Eclairs Image 3">
+                </div>
+                <div class="mySlides">
+                    <img src="images/eclairs5.jpg" alt="Chocolate Eclairs Image 4">
+                </div>
+                <div class="mySlides">
+                    <img src="images/eclairs6.jpg" alt="Chocolate Eclairs Image 5">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Enjoy!</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p style="font-family: 'Dancing Script', cursive;">&copy; 2024 The Art of Dessert. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex - 1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>
